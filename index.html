@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<meta name="description" content="TAJBI Premium Panjabi Collection. Shop elegant men's Panjabi with Cash on Delivery across Bangladesh.">
+<title>TAJBI | Premium Panjabi Collection</title>
+<style>
+:root{--black:#101010;--panel:#191919;--gold:#c9a45c;--cream:#f7f3ea;--muted:#aaa;--line:#333}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#faf9f6;color:#171717;font-family:Arial,"Noto Sans Bengali",sans-serif}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+.topbar{background:#111;color:#e8d7b1;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:1px}
+header{background:#111;color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #302719}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:17px 22px;gap:16px}
+.logo{font-family:Georgia,serif;font-size:30px;letter-spacing:5px;color:var(--gold);font-weight:bold}
+.logo small{display:block;font:9px Arial;letter-spacing:2px;color:#eee;text-align:center;margin-top:3px}
+.navlinks{display:flex;gap:24px;font-size:13px;color:#eee}.navlinks a:hover{color:var(--gold)}
+.cartbtn{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:10px 14px;cursor:pointer;border-radius:2px}
+.hero{background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.48)),linear-gradient(135deg,#29251d,#111);color:white;min-height:440px;display:flex;align-items:center}
+.hero-inner{max-width:1180px;width:100%;margin:auto;padding:65px 24px}
+.eyebrow{color:var(--gold);letter-spacing:4px;font-size:11px;text-transform:uppercase}
+.hero h1{font:clamp(42px,7vw,76px) Georgia,serif;line-height:1.05;margin:18px 0;max-width:650px}
+.hero p{color:#ddd;max-width:480px;line-height:1.8;font-size:15px}
+.btn{display:inline-block;background:var(--gold);color:#111;border:0;padding:14px 22px;font-weight:bold;letter-spacing:.5px;cursor:pointer;margin-top:15px}
+.btn:hover{background:#e0c17d}
+.section{max-width:1180px;margin:0 auto;padding:58px 22px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:24px}
+.kicker{font-size:11px;color:#9b7738;letter-spacing:3px;text-transform:uppercase}
+h2{font:32px Georgia,serif;margin:8px 0}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.tools input,.tools select{padding:12px;border:1px solid #ddd;background:white;min-width:180px;flex:1}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:white;border:1px solid #eee;position:relative}
+.product-img{height:270px;background:linear-gradient(145deg,#26231e,#a18a62);display:flex;align-items:center;justify-content:center;color:#ead7aa;text-align:center;position:relative;overflow:hidden}
+.product-img:before{content:"";position:absolute;width:105px;height:175px;border:2px solid rgba(230,210,170,.5);border-radius:48% 48% 10% 10%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);transform:translateY(12px)}
+.product-img span{position:relative;z-index:1;font:11px Georgia,serif;letter-spacing:3px;margin-top:210px}
+.product-info{padding:15px}.product-info h3{font-size:15px;margin:0 0 8px}.price{font-weight:bold;color:#8b682d}
+.card-actions{display:flex;gap:8px;margin-top:12px}.card-actions button{flex:1;padding:10px 7px;border:1px solid #171717;background:white;cursor:pointer;font-size:12px}.card-actions .add{background:#111;color:#fff}
+.card-actions button:hover{border-color:var(--gold)}
+.badge{position:absolute;top:12px;left:12px;background:var(--gold);color:#111;padding:6px 8px;font-size:10px;z-index:2}
+.note{background:#f1ede4;padding:20px;margin-top:25px;color:#5b513f;font-size:13px;line-height:1.7}
+.benefits{background:#111;color:#fff}.benefit-grid{max-width:1180px;margin:auto;padding:35px 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.benefit-grid strong{color:var(--gold);display:block;margin-bottom:8px}.benefit-grid span{font-size:13px;color:#ccc}
+footer{background:#0c0c0c;color:#ddd;padding:42px 22px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-logo{font:30px Georgia;color:var(--gold);letter-spacing:4px}.footer-small{font-size:13px;color:#aaa;line-height:1.8}
+.drawer-backdrop{display:none;position:fixed;inset:0;background:#0008;z-index:30}.drawer{position:fixed;right:0;top:0;height:100%;width:min(430px,100%);background:white;z-index:31;transform:translateX(105%);transition:.25s;padding:22px;overflow:auto}.drawer.open{transform:translateX(0)}.drawer-backdrop.show{display:block}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding-bottom:15px}.close{border:0;background:none;font-size:25px;cursor:pointer}
+.cart-line{display:flex;justify-content:space-between;gap:12px;padding:15px 0;border-bottom:1px solid #eee;font-size:14px}.qty{display:flex;align-items:center;gap:8px;margin-top:8px}.qty button{background:#eee;border:0;padding:4px 9px;cursor:pointer}
+.total{display:flex;justify-content:space-between;font-weight:bold;padding:18px 0;font-size:18px}
+.formfield{display:block;width:100%;padding:12px;border:1px solid #ddd;margin:9px 0}
+.checkout{width:100%;background:#16834a;color:white;border:0;padding:15px;font-weight:bold;cursor:pointer}
+.empty{text-align:center;color:#777;padding:30px 0}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.product-img{height:240px}.navlinks{display:none}}
+@media(max-width:480px){.grid{gap:10px}.product-img{height:190px}.product-img:before{height:135px;width:82px}.product-img span{margin-top:155px}.product-info{padding:11px}.hero{min-height:390px}.benefit-grid{grid-template-columns:1fr}.section{padding:42px 14px}.nav{padding:14px}}
+</style>
+</head>
+<body>
+<div class="topbar">সারা বাংলাদেশে Cash on Delivery • নতুন কালেকশন এখন উপলব্ধ</div>
+<header><nav class="nav">
+<a href="#" class="logo">TAJBI<small>PREMIUM PANJABI COLLECTION</small></a>
+<div class="navlinks"><a href="#home">হোম</a><a href="#shop">শপ</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></div>
+<button class="cartbtn" onclick="openCart()">কার্ট (<span id="cartCount">0</span>)</button>
+</nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div class="eyebrow">Elegance • Tradition • Style</div>
+<h1>Tradition,<br>Tailored for You.</h1>
+<p>রুচিশীল ডিজাইন, আরামদায়ক কাপড় এবং আধুনিক স্টাইলের সমন্বয়ে TAJBI নিয়ে এসেছে আপনার প্রতিদিন ও বিশেষ মুহূর্তের পাঞ্জাবি কালেকশন।</p>
+<a class="btn" href="#shop">কালেকশন দেখুন</a>
+</div></section>
+<section class="section" id="shop">
+<div class="section-head"><div><div class="kicker">Discover TAJBI</div><h2>আমাদের পাঞ্জাবি কালেকশন</h2></div><div style="font-size:12px;color:#777">Premium Men's Wear</div></div>
+<div class="tools"><input id="search" placeholder="পাঞ্জাবি খুঁজুন..." oninput="renderProducts()"><select id="category" onchange="renderProducts()"><option value="all">সব কালেকশন</option><option value="casual">ক্যাজুয়াল</option><option value="formal">ফরমাল</option><option value="festive">ফেস্টিভ</option></select></div>
+<div class="grid" id="productGrid"></div>
+<div class="note"><b>দ্রষ্টব্য:</b> এটি TAJBI ওয়েবসাইটের প্রাথমিক ডেমো। প্রকাশের আগে প্রতিটি পণ্যের আসল ছবি, নাম, দাম, সাইজ ও স্টক তথ্য বসিয়ে নেবেন। নিচের পণ্যের নাম ও দাম নমুনা হিসেবে দেওয়া হয়েছে।</div>
+</section>
+<section class="benefits" id="about"><div class="benefit-grid">
+<div><strong>Premium Quality</strong><span>বাছাই করা কাপড় ও যত্নশীল ফিনিশিং</span></div>
+<div><strong>Cash on Delivery</strong><span>পণ্য হাতে পেয়ে মূল্য পরিশোধ করুন</span></div>
+<div><strong>Delivery Nationwide</strong><span>বাংলাদেশের যেকোনো প্রান্তে ডেলিভারি</span></div>
+</div></section>
+</main>
+<footer id="contact"><div class="footer-inner"><div><div class="footer-logo">TAJBI</div><div class="footer-small">PREMIUM PANJABI COLLECTION<br>Elegance • Tradition • Style</div></div><div class="footer-small"><b style="color:#d0ad6b">যোগাযোগ</b><br>WhatsApp: 01953237513<br>সারা বাংলাদেশে ডেলিভারি<br>পেমেন্ট: Cash on Delivery</div></div></footer>
+
+<div class="drawer-backdrop" id="backdrop" onclick="closeCart()"></div>
+<aside class="drawer" id="drawer"><div class="drawer-head"><h2 style="font-size:25px">আপনার কার্ট</h2><button class="close" onclick="closeCart()">×</button></div>
+<div id="cartItems"></div><div class="total"><span>মোট</span><span id="cartTotal">৳0</span></div>
+<h3>অর্ডারের তথ্য</h3>
+<input class="formfield" id="customerName" placeholder="আপনার নাম">
+<input class="formfield" id="customerPhone" placeholder="মোবাইল নম্বর">
+<textarea class="formfield" id="customerAddress" placeholder="সম্পূর্ণ ডেলিভারি ঠিকানা" rows="3"></textarea>
+<textarea class="formfield" id="customerNote" placeholder="অতিরিক্ত নির্দেশনা (ঐচ্ছিক)" rows="2"></textarea>
+<p style="font-size:12px;color:#777;line-height:1.6">পেমেন্ট: Cash on Delivery (পণ্য হাতে পেয়ে মূল্য পরিশোধ)। অর্ডার WhatsApp-এ পাঠানো হবে; TAJBI টিম অর্ডার নিশ্চিত করবে।</p>
+<button class="checkout" onclick="sendOrder()">WhatsApp-এ অর্ডার কনফার্ম করুন</button>
+</aside>
+<script>
+// TAJBI STORE SETTINGS
+const WHATSAPP_NUMBER = "8801953237513"; // Bangladesh format: 01953237513
+// Replace these demo products with your real product names, prices, sizes and image URLs.
+// To add a real photo, add image:"https://your-image-link.jpg" to a product.
+const products = [
+{id:1,name:"Classic Black Panjabi",price:1890,category:"formal",tag:"Bestseller"},
+{id:2,name:"Royal White Panjabi",price:1750,category:"festive",tag:"New"},
+{id:3,name:"Midnight Blue Panjabi",price:1950,category:"casual",tag:""},
+{id:4,name:"Olive Premium Panjabi",price:1850,category:"casual",tag:""},
+{id:5,name:"Ivory Embroidered Panjabi",price:2250,category:"festive",tag:"Premium"},
+{id:6,name:"Charcoal Classic Panjabi",price:1790,category:"formal",tag:""},
+{id:7,name:"Maroon Festive Panjabi",price:2150,category:"festive",tag:""},
+{id:8,name:"Sand Beige Panjabi",price:1690,category:"casual",tag:""},
+{id:9,name:"Navy Minimal Panjabi",price:1890,category:"formal",tag:""},
+{id:10,name:"Sage Green Panjabi",price:1790,category:"casual",tag:""},
+{id:11,name:"Black Textured Panjabi",price:2090,category:"festive",tag:""},
+{id:12,name:"Cream Classic Panjabi",price:1750,category:"formal",tag:""}
+];
+let cart = [];
+const money = n => "৳"+Number(n).toLocaleString("en-BD");
+function renderProducts(){
+ const q=document.getElementById("search").value.toLowerCase();
+ const cat=document.getElementById("category").value;
+ const list=products.filter(p=>(p.name.toLowerCase().includes(q))&&(cat==="all"||p.category===cat));
+ document.getElementById("productGrid").innerHTML=list.map(p=>`
+ <article class="card"><div class="product-img" ${p.image?`style="background-image:url('${p.image}');background-size:cover;background-position:center"`:""}>${p.tag?`<span class="badge">${p.tag}</span>`:""}<span>TAJBI • COLLECTION</span></div>
+ <div class="product-info"><h3>${p.name}</h3><div class="price">${money(p.price)}</div><div class="card-actions"><button onclick="addToCart(${p.id})" class="add">কার্টে যোগ করুন</button><button onclick="buyNow(${p.id})">অর্ডার</button></div></div></article>`).join("") || '<div class="empty">কোনো পণ্য পাওয়া যায়নি।</div>';
+}
+function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});updateCart();openCart()}
+function buyNow(id){addToCart(id)}
+function updateCart(){
+ document.getElementById("cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0);
+ document.getElementById("cartItems").innerHTML=cart.length?cart.map(x=>{const p=products.find(y=>y.id===x.id);return `<div class="cart-line"><div><b>${p.name}</b><div>${money(p.price)} × ${x.qty}</div><div class="qty"><button onclick="changeQty(${x.id},-1)">−</button>${x.qty}<button onclick="changeQty(${x.id},1)">+</button><button onclick="removeItem(${x.id})" style="margin-left:8px">Remove</button></div></div><b>${money(p.price*x.qty)}</b></div>`}).join(""):'<div class="empty">আপনার কার্ট খালি।</div>';
+ document.getElementById("cartTotal").textContent=money(cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0));
+}
+function changeQty(id,n){const x=cart.find(i=>i.id===id);if(x){x.qty+=n;if(x.qty<=0)cart=cart.filter(i=>i.id!==id)}updateCart()}
+function removeItem(id){cart=cart.filter(x=>x.id!==id);updateCart()}
+function openCart(){document.getElementById("drawer").classList.add("open");document.getElementById("backdrop").classList.add("show")}
+function closeCart(){document.getElementById("drawer").classList.remove("open");document.getElementById("backdrop").classList.remove("show")}
+function sendOrder(){
+ if(!cart.length){alert("আপনার কার্টে আগে পণ্য যোগ করুন।");return}
+ const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim(),address=document.getElementById("customerAddress").value.trim(),note=document.getElementById("customerNote").value.trim();
+ if(!name||!phone||!address){alert("অনুগ্রহ করে নাম, মোবাইল নম্বর ও ঠিকানা পূরণ করুন।");return}
+ const lines=cart.map(x=>{const p=products.find(y=>y.id===x.id);return `• ${p.name} | Qty: ${x.qty} | ${money(p.price*x.qty)}`});
+ const total=cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0);
+ const msg=`নতুন অর্ডার - TAJBI%0A%0Aগ্রাহকের নাম: ${encodeURIComponent(name)}%0Aমোবাইল: ${encodeURIComponent(phone)}%0Aঠিকানা: ${encodeURIComponent(address)}%0A%0Aপণ্যের বিবরণ:%0A${encodeURIComponent(lines.join("\n"))}%0A%0Aমোট: ${encodeURIComponent(money(total))}%0APayment: Cash on Delivery%0Aঅতিরিক্ত নোট: ${encodeURIComponent(note||"নেই")}`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,"_blank");
+}
+renderProducts();updateCart();
+</script>
+</body></html>
